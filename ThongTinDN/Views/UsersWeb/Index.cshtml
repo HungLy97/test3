@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<form id="myForm">
+    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="email" id="email" name="email" placeholder="Email">
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+function submitForm() {
+    var formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value
+    };
+
+    fetch('/YourController/AddData', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    }).then(response => {
+        if (response.ok) {
+            // Xử lý khi gửi thành công
+            console.log('Data sent successfully');
+        } else {
+            // Xử lý khi gửi thất bại
+            console.error('Failed to send data');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+    });
+}
+</script>
+
+

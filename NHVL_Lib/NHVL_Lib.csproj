@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1141896-40DA-4ABB-8611-8B5411BD0A72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NHVL_Lib</RootNamespace>
+    <AssemblyName>NHVL_Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\DoanhNghiep_Dao.cs" />
+    <Compile Include="Dao\UsersWeb_Dao.cs" />
+    <Compile Include="Model\aspnet_getmba.cs" />
+    <Compile Include="Model\aspnet_getVisitors.cs" />
+    <Compile Include="Model\BHTN_CoViecLam.cs" />
+    <Compile Include="Model\BHTN_XacNhanThangHuong.cs" />
+    <Compile Include="Model\Chan_SignlR.cs" />
+    <Compile Include="Model\chinhanh.cs" />
+    <Compile Include="Model\DanhGia_VoidChat.cs" />
+    <Compile Include="Model\DiemDanh.cs" />
+    <Compile Include="Model\DM_CheDoPhucLoi_2022.cs" />
+    <Compile Include="Model\DM_ChucDanh.cs" />
+    <Compile Include="Model\DM_ChucVu_2022.cs" />
+    <Compile Include="Model\DM_DanToc.cs" />
+    <Compile Include="Model\DM_DiaChi.cs" />
+    <Compile Include="Model\DM_DichVu2022.cs" />
+    <Compile Include="Model\DM_DoiTuong.cs" />
+    <Compile Include="Model\DM_DoiTuongChinhSach.cs" />
+    <Compile Include="Model\DM_DoiTuongUuTien_2022.cs" />
+    <Compile Include="Model\DM_DonViDaoTao.cs" />
+    <Compile Include="Model\DM_Dung2Tay_2022.cs" />
+    <Compile Include="Model\DM_DungDiLai_2022.cs" />
+    <Compile Include="Model\DM_GioiTinh.cs" />
+    <Compile Include="Model\DM_HinhThucLamViec_2022.cs" />
+    <Compile Include="Model\DM_HinhThucTuyenDung_2022.cs" />
+    <Compile Include="Model\DM_HocPhi.cs" />
+    <Compile Include="Model\DM_HocVan.cs" />
+    <Compile Include="Model\DM_KhuCongNghiep.cs" />
+    <Compile Include="Model\DM_KinhNghiem_2022.cs" />
+    <Compile Include="Model\DM_KyNangMem_2022.cs" />
+    <Compile Include="Model\DM_LoaiCongViec.cs" />
+    <Compile Include="Model\DM_LoaiCoViecLam.cs" />
+    <Compile Include="Model\DM_LoaiGiaoDich.cs" />
+    <Compile Include="Model\DM_LoaiHinhDoanhNghiep.cs" />
+    <Compile Include="Model\DM_LoaiHopDong_2022.cs" />
+    <Compile Include="Model\DM_LoaiTimViecLam.cs" />
+    <Compile Include="Model\DM_LoaiTinhTrang.cs" />
+    <Compile Include="Model\DM_LoaiTuVan.cs" />
+    <Compile Include="Model\DM_LoaiViecLamTrong.cs" />
+    <Compile Include="Model\DM_LocTenDoanhNghiep.cs" />
+    <Compile Include="Model\DM_LyDoHuyC.cs" />
+    <Compile Include="Model\DM_LyDoNghiViec.cs" />
+    <Compile Include="Model\DM_MongMuonDN_2022.cs" />
+    <Compile Include="Model\DM_MucDichLamViec_2022.cs" />
+    <Compile Include="Model\DM_MucLuong2022.cs" />
+    <Compile Include="Model\DM_NganHang.cs" />
+    <Compile Include="Model\DM_NganhKinhDoanh.cs" />
+    <Compile Include="Model\DM_NganhKinhTe2022.cs" />
+    <Compile Include="Model\DM_NganhLaoDong.cs" />
+    <Compile Include="Model\DM_NgheHoc.cs" />
+    <Compile Include="Model\DM_NgheHocCND.cs" />
+    <Compile Include="Model\DM_NgheKinhDoanh.cs" />
+    <Compile Include="Model\DM_NgheLaoDong.cs" />
+    <Compile Include="Model\DM_NgheNghiep34_2022.cs" />
+    <Compile Include="Model\DM_NgheNoi_2022.cs" />
+    <Compile Include="Model\DM_NghiepVu.cs" />
+    <Compile Include="Model\DM_NoiCapGPLX.cs" />
+    <Compile Include="Model\DM_NoiLamViec_2022.cs" />
+    <Compile Include="Model\DM_QuocGia.cs" />
+    <Compile Include="Model\DM_QuocGia2022.cs" />
+    <Compile Include="Model\DM_ThaoTacBangTay_2022.cs" />
+    <Compile Include="Model\DM_ThiLuc_2022.cs" />
+    <Compile Include="Model\DM_ThoiGianLamViec.cs" />
+    <Compile Include="Model\DM_TinhTrangHSHocNghe.cs" />
+    <Compile Include="Model\DM_TinhTrangPheDuyetHoSo.cs" />
+    <Compile Include="Model\DM_TinhTrangViecLam.cs" />
+    <Compile Include="Model\DM_TonGiao.cs" />
+    <Compile Include="Model\DM_TrinhDoChuyenMon.cs" />
+    <Compile Include="Model\DM_TrinhDoHocVan_2022.cs" />
+    <Compile Include="Model\DM_TrongLuongNang_2022.cs" />
+    <Compile Include="Model\DM_YeuCauThem_2022.cs" />
+    <Compile Include="Model\DN_SanOnline.cs" />
+    <Compile Include="Model\DoanhNghiep.cs" />
+    <Compile Include="Model\DoanhNghiep_DangKyPhongVan_2022.cs" />
+    <Compile Include="Model\DoanhNghiep_QuaTrinhGiaoDich.cs" />
+    <Compile Include="Model\DoanhNghiep_QuaTrinhMau2829.cs" />
+    <Compile Include="Model\DoanhNghiep_QuaTrinhTuyenDung.cs" />
+    <Compile Include="Model\DoanhNghiep_TuVanTimUngVien.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_CongVan_List_2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_LaoDongNuocNgoai_DiaDiemLamViec2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_LaoDongNuocNgoai_MoTaKinhNghiem2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_LaoDongNuocNgoai_MoTaLuong2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_LaoDongNuocNgoai_ThoiGianLamViec2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_NghiepVu.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_NgoaiNgu.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_SendEmail_2023.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_ThamGiaSan_2022.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_TinHoc.cs" />
+    <Compile Include="Model\DoanhNghiep_TuyenDung_TrinhDoCMKT_2022.cs" />
+    <Compile Include="Model\DoanhNgiep_TuyenDung_CheDoPhucLoi_2022.cs" />
+    <Compile Include="Model\DoanhNgiep_TuyenDung_DieKienLamViec_2022.cs" />
+    <Compile Include="Model\DoanhNgiep_TuyenDung_KyNangMem_2022.cs" />
+    <Compile Include="Model\ErrorPheDuyetTuyenDung_2023.cs" />
+    <Compile Include="Model\Friends_SanOnline.cs" />
+    <Compile Include="Model\GiamThi.cs" />
+    <Compile Include="Model\GiaoVien.cs" />
+    <Compile Include="Model\HocNghe_FileDinhKem.cs" />
+    <Compile Include="Model\HocVien.cs" />
+    <Compile Include="Model\HocVienTotNghiep.cs" />
+    <Compile Include="Model\HocVien_BoHoc.cs" />
+    <Compile Include="Model\hoso.cs" />
+    <Compile Include="Model\Hoso_BHTN.cs" />
+    <Compile Include="Model\HoSo_GioiThieuViecLam.cs" />
+    <Compile Include="Model\KetQua_Thi.cs" />
+    <Compile Include="Model\KhachHang.cs" />
+    <Compile Include="Model\KhachHang_DangKyPhongVan_2022.cs" />
+    <Compile Include="Model\KhachHang_HocNghe.cs" />
+    <Compile Include="Model\KhachHang_KinhNghiem_LamViec_2022.cs" />
+    <Compile Include="Model\KhachHang_NghiepVu.cs" />
+    <Compile Include="Model\KhachHang_QuaTrinhBHTN.cs" />
+    <Compile Include="Model\KhachHang_QuaTrinhHocNghe.cs" />
+    <Compile Include="Model\KhachHang_QuaTrinhLamViec.cs" />
+    <Compile Include="Model\KhachHang_QuaTrinhMau2829.cs" />
+    <Compile Include="Model\KhachHang_TimViecLam.cs" />
+    <Compile Include="Model\KhachHang_TimViecLam_FileDinhKem.cs" />
+    <Compile Include="Model\KhachHang_TimViec_CheDoPhucLoi_2022.cs" />
+    <Compile Include="Model\KhachHang_TimViec_KinhNghiem_2022.cs" />
+    <Compile Include="Model\KhachHang_TimViec_KyNangMem_2022.cs" />
+    <Compile Include="Model\KhachHang_TimViec_NgoaiNgu_2022.cs" />
+    <Compile Include="Model\KhachHang_TimViec_TinHoc.cs" />
+    <Compile Include="Model\KhachHang_TimViec_TrinhDoCMKT_2022.cs" />
+    <Compile Include="Model\KhachHang_TinhTrang.cs" />
+    <Compile Include="Model\KhachHang_TrinhDo.cs" />
+    <Compile Include="Model\KhachHang_TuVanTimViecLam.cs" />
+    <Compile Include="Model\KhoaDaoTao.cs" />
+    <Compile Include="Model\KhoaDaoTao_FileDinhKem.cs" />
+    <Compile Include="Model\LaoDongTimViec_FileDinhKem.cs" />
+    <Compile Include="Model\LaoDong_BHTN_TuVanTimViecLam.cs" />
+    <Compile Include="Model\LaoDong_TimViecLam.cs" />
+    <Compile Include="Model\LaoDong_TuVanTimViecLam.cs" />
+    <Compile Include="Model\loaihoso.cs" />
+    <Compile Include="Model\mau28.cs" />
+    <Compile Include="Model\Mau2829.cs" />
+    <Compile Include="Model\mau28_ChuyenMonKyThuat.cs" />
+    <Compile Include="Model\mau28_congty.cs" />
+    <Compile Include="Model\mau28_DM_ChucDanh.cs" />
+    <Compile Include="Model\mau28_DM_DanToc.cs" />
+    <Compile Include="Model\mau28_DM_LoaiHDLD.cs" />
+    <Compile Include="Model\mau28_DM_LoaiKhaiBao.cs" />
+    <Compile Include="Model\mau28_DM_LyDoChamDutHD.cs" />
+    <Compile Include="Model\MessageVoidChat_TuVan.cs" />
+    <Compile Include="Model\Message_SanOnline.cs" />
+    <Compile Include="Model\Message_VoidChat.cs" />
+    <Compile Include="Model\m_gioithieu.cs" />
+    <Compile Include="Model\News.cs" />
+    <Compile Include="Model\NewsCategories.cs" />
+    <Compile Include="Model\NewsStatus.cs" />
+    <Compile Include="Model\NgheNghiep34_2022Short.cs" />
+    <Compile Include="Model\NhanVien_LoaiTaiKhoan.cs" />
+    <Compile Include="Model\NhanVien_TaiKhoan.cs" />
+    <Compile Include="Model\NhatKyDangNhap2.cs" />
+    <Compile Include="Model\NhatKy_Admin.cs" />
+    <Compile Include="Model\NhatKy_TuVanSignalR.cs" />
+    <Compile Include="Model\NHVL.cs" />
+    <Compile Include="Model\NTV_SanOnline.cs" />
+    <Compile Include="Model\PhongHoc.cs" />
+    <Compile Include="Model\PHU_HSTD_Luu.cs" />
+    <Compile Include="Model\PHU_HSTV_Luu.cs" />
+    <Compile Include="Model\QRCode.cs" />
+    <Compile Include="Model\SVL_PhienGiaoDich.cs" />
+    <Compile Include="Model\SVL_TuyenDung.cs" />
+    <Compile Include="Model\SVL_UngVien.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
+    <Compile Include="Model\ThongKe_DN_SanOnline_Online.cs" />
+    <Compile Include="Model\ThongKe_NTV_SanOnline_Online.cs" />
+    <Compile Include="Model\TuVanHocNgheBHTN.cs" />
+    <Compile Include="Model\UserSignIR_TuVan.cs" />
+    <Compile Include="Model\UserWeb.cs" />
+    <Compile Include="Model\User_SignlR.cs" />
+    <Compile Include="Model\VBPQ_DonVi.cs" />
+    <Compile Include="Model\VBPQ_LoaiTaiLieu.cs" />
+    <Compile Include="Model\VBPQ_TaiLieu.cs" />
+    <Compile Include="Model\Videos.cs" />
+    <Compile Include="Model\Video_SanOnline.cs" />
+    <Compile Include="Model\ViecLam_DaoTao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\obj\Debug\NHVL_Lib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\NHVL_Lib.dll.config
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\NHVL_Lib.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\obj\Debug\NHVL_Lib.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\obj\Debug\NHVL_Lib.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\mau01\NHVL_Lib\bin\Debug\NHVL_Lib.dll
